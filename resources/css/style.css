@@ -13,7 +13,7 @@ orange color: #e67e22;
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
@@ -232,8 +232,7 @@ input[type=submit]:active {
 }
 
 .btn-full:hover,
-.btn-full:active
-{
+.btn-full:active {
     border: 1px solid #cf6d17;
 }
 
@@ -265,17 +264,27 @@ header {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo{
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
 
+.logo-black {
+    display:none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin:5px 0;
+
+}
+
+/* Main nav */
 .main-nav {
     float: right;
     list-style: none;
@@ -304,6 +313,39 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 
+}
+
+
+/* Sticky nav */
+
+.sticky-nav {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index:9999;
+}
+
+.sticky-nav .main-nav {
+    
+    margin-top: 18px;
+}
+
+
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited {
+    padding: 16px 0;
+    color:#555;
+}
+
+.sticky-nav .logo {
+    display:none;
+}
+.sticky-nav .logo-black {
+    display:block;
 }
 
 /*------------------------------------------------*/
@@ -345,8 +387,8 @@ header {
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-            transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     -o-transition: transform 0.5s, opacity 0.5s;
@@ -357,8 +399,8 @@ header {
 .meal-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-            transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 /*------------------------------------------------*/
@@ -413,11 +455,11 @@ header {
     border: 2px solid #cf6d17;
     display: inline-block;
     border-radius: 50%;
-    height: 55px; 
+    height: 55px;
     width: 55px;
     text-align: center;
     padding: 5px;
-    float:left;
+    float: left;
     font-size: 150%;
     margin-right: 25px;
 }
@@ -495,7 +537,7 @@ cite img {
     width: 90%;
     margin: 5%;
     -webkit-box-shadow: 0 2px 2px #efefef;
-            box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
@@ -547,8 +589,8 @@ cite img {
 .contact-form {
     width: 60%;
     margin: 0 auto;
-    font-weight:400;
-    
+    font-weight: 400;
+
 }
 
 input[type=text],
@@ -567,12 +609,12 @@ textarea {
     height: 100px;
 }
 
-input[type=checkbox]{
-    margin:10px 5px 10px 0;
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
 }
 
 *:focus {
-    outline:none;
+    outline: none;
 }
 
 
@@ -581,32 +623,33 @@ input[type=checkbox]{
 /*------------------------------------------------*/
 
 
-footer{
+footer {
     background-color: #333;
-    padding:40px;
-    font-size:80%;
+    padding: 40px;
+    font-size: 80%;
 }
 
 .footer-nav {
-    list-style:none;
-    float:left;
+    list-style: none;
+    float: left;
 }
 
 .social-links {
     list-style: none;
-    float:right;
+    float: right;
 }
 
 .footer-nav li,
 .social-links li {
-    display:inline-block;
-    margin-right: 20px;;
+    display: inline-block;
+    margin-right: 20px;
+    ;
 }
 
 
 .footer-nav li:last-child,
-.social-links li:last-child{
-    margin:0;
+.social-links li:last-child {
+    margin: 0;
 }
 
 .footer-nav li a:link,
@@ -614,8 +657,8 @@ footer{
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
-    border:0;
-    color:#888;
+    border: 0;
+    color: #888;
     -webkit-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s;
@@ -623,18 +666,18 @@ footer{
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-    color:#ddd;
+    color: #ddd;
 }
 
 .social-links li a:link,
-.social-links li a:visited{
-    font-size:160%;
+.social-links li a:visited {
+    font-size: 160%;
 }
 
 footer p {
-    color:#888;
-    text-align: center;   
-    margin-top:20px;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .ion-social-facebook,
@@ -646,22 +689,18 @@ footer p {
     transition: color 0.2s;
 }
 
-.ion-social-facebook:hover
-{
-  color:#3b5998
-}
-.ion-social-twitter:hover
-{
-    color:#55acee
+.ion-social-facebook:hover {
+    color: #3b5998
 }
 
-.ion-social-youtube:hover
-{
-    color:#ff0000
+.ion-social-twitter:hover {
+    color: #55acee
 }
 
-.ion-social-instagram:hover 
-{
-    color:#e95950
+.ion-social-youtube:hover {
+    color: #ff0000
 }
 
+.ion-social-instagram:hover {
+    color: #e95950
+}
