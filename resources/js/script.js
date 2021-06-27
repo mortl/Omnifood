@@ -91,26 +91,32 @@ $('a[href*="#"]')
 
 /* Animations on scroll */
 
+//features fade in
   $('.js--wp-1').waypoint(function(direction){
       $('.js--wp-1').addClass('animated fadeIn');
     },
     {
       offset:'50%'
         });
+        // app screen 
   $('.js--wp-2').waypoint(function(direction){
       $('.js--wp-2').addClass('animated fadeInUp');
     },
     {
       offset:'50%'
         });
+
+//cities 
   $('.js--wp-3').waypoint(function(direction){
       $('.js--wp-3').addClass('animated fadeIn');
     },
     {
       offset:'50%'
         });
+
+        //pricing plan most expensive.
   $('.js--wp-4').waypoint(function(direction){
-      $('.js--wp-4').addClass('animated fadeIn');
+      $('.js--wp-4').addClass('animated pulse');
     },
     {
       offset:'50%'
