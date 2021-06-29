@@ -334,14 +334,11 @@ header {
     margin-top: 18px;
 }
 
-
-
 .sticky-nav .main-nav li a:link,
 .sticky-nav .main-nav li a:visited {
     padding: 16px 0;
     color:#555;
 }
-
 .sticky-nav .logo {
     display:none;
 }
@@ -349,6 +346,21 @@ header {
     display:block;
 }
 
+/*------------------------------------------------*/
+/* Mobile Nav */
+/*------------------------------------------------*/
+
+.mobile-nav-icon{
+    float:right;
+    margin-top:30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size:200%;
+    color:#f4f4f4;
+}
 /*------------------------------------------------*/
 /* features */
 /*------------------------------------------------*/
@@ -588,7 +600,7 @@ cite img {
 
 
 .contact-form {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     font-weight: 400;
 
@@ -616,6 +628,32 @@ input[type=checkbox] {
 
 *:focus {
     outline: none;
+}
+
+.map-box {
+    width:100%;
+    height:560px;
+    position: relative;
+}
+
+
+.map {
+    width:100%;
+    height:560px;
+    z-index:0;
+}
+
+.form-box {
+   position: absolute;
+   width:50%;
+   top:0;
+   right:0;
+   background-color: rgba(255, 255, 255, 0.8);
+   z-index:10;
+   height:560px;
+   padding-top:40px;
+
+
 }
 
 

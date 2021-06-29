@@ -114,7 +114,7 @@ $('a[href*="#"]')
       offset:'50%'
         });
 
-        //pricing plan most expensive.
+//pricing plan most expensive.
   $('.js--wp-4').waypoint(function(direction){
       $('.js--wp-4').addClass('animated pulse');
     },
@@ -122,4 +122,32 @@ $('a[href*="#"]')
       offset:'50%'
         });
 
+  /* Mobile navigation */
+
+  $('.js--nav-icon').click(function()
+  {
+      var nav = $('.js--main-nav');
+      var icon = $('.js--nav-icon i');
+      
+      var openIcon = 'ion-navicon-round';
+      var closeIcon = 'ion-close-round';
+      nav.slideToggle(300);
+
+      if(icon.hasClass(openIcon)){
+        icon.addClass(closeIcon);
+        icon.removeClass(openIcon);
+      } else {
+        icon.addClass(openIcon);
+        icon.removeClass(closeIcon);
+      }
+
+  });
+
+
+  new GMaps({
+    div:'.map',
+    lat:44.3653071,
+    lng:-79.7012648,
+    zoom:12
+  });
 }); //main close brackets
